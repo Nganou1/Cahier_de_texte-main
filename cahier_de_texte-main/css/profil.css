@@ -1,0 +1,175 @@
+main{
+    background-color: #D9D9D9;
+    margin-top: 1%;
+    width: 80%;
+    margin-left: 10%;
+    height: 500px;
+    /* position: absolute; */
+    /* top: 0; */
+    margin-bottom: 7%;
+    border-radius: 50px;
+    display: flex !important;
+
+}
+.table_container{
+    border-bottom: none;
+    height: 243px;
+    overflow-y: auto;
+    border-bottom: none !important;
+}
+h3{
+    font-size: 1.17em !important;
+}
+#container_title{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    margin-top: 1%;
+}
+#container_nom_prenom{
+    width: 20%;
+    height: 100%;
+    background-color: #7CA3CD;
+    border-radius: 50px;
+}
+#container_information{
+    width: 80%;
+    /* padding-top: 5%; */
+}
+#container_information div{
+    display: flex;
+    margin-top: 5%;
+    justify-content: space-around;
+    width: 90%;
+    margin-left: 5%;
+    border-bottom:3px solid black ;
+}
+#deco_mini{
+    left: 0;
+    position:absolute;
+    background-color: #4A7DB4;
+    width: 111px;
+    height: 110px;
+    left: 17px;
+    top: 71px;
+    clip-path: path("M10.1103 86.7848C13.4778 91.4846 17.5723 95.6382 22.2313 99.0849L105.044 30.1666C102.4 25.0029 98.9569 20.3079 94.8761 16.2409L10.1103 86.7848ZM44.5676 108.944C38.8046 107.81 33.3628 105.794 28.3917 103.044L107.922 36.8567C109.785 42.1362 110.858 47.7827 111 53.6575L44.5676 108.944ZM54.2316 109.987C54.6391 109.996 55.0478 110 55.4575 110C83.3108 110 106.377 89.7097 110.396 63.2457L54.2316 109.987ZM89.5617 11.5781C83.9717 7.26935 77.5278 3.9952 70.5236 2.04625L0.181785 60.5862C0.920198 67.833 3.07969 74.6645 6.38017 80.8035L89.5617 11.5781ZM55.4575 0C57.5535 0 59.6225 0.114904 61.6582 0.338695L0 51.6519C1.74795 22.8353 25.9089 0 55.4575 0Z")
+}
+#deco_big{
+    right: 5px;
+    position:absolute;
+    background-color: #4A7DB4;
+    width: 111px;
+    height: 110px;
+    top: 521px; 
+    clip-path: path("M10.1103 86.7848C13.4778 91.4846 17.5723 95.6382 22.2313 99.0849L105.044 30.1666C102.4 25.0029 98.9569 20.3079 94.8761 16.2409L10.1103 86.7848ZM44.5676 108.944C38.8046 107.81 33.3628 105.794 28.3917 103.044L107.922 36.8567C109.785 42.1362 110.858 47.7827 111 53.6575L44.5676 108.944ZM54.2316 109.987C54.6391 109.996 55.0478 110 55.4575 110C83.3108 110 106.377 89.7097 110.396 63.2457L54.2316 109.987ZM89.5617 11.5781C83.9717 7.26935 77.5278 3.9952 70.5236 2.04625L0.181785 60.5862C0.920198 67.833 3.07969 74.6645 6.38017 80.8035L89.5617 11.5781ZM55.4575 0C57.5535 0 59.6225 0.114904 61.6582 0.338695L0 51.6519C1.74795 22.8353 25.9089 0 55.4575 0Z")
+
+}
+.icon_profile{
+    height: 50%;
+    width: 80%;
+    margin-left: 10%;
+    filter: drop-shadow(0px 22px 5px rgba(0, 0, 0, 0.25));
+    border-radius: 50px;
+}
+#animated-svg{
+    margin-top: 33%;
+    width:  100%;
+    
+}
+.nom{
+    width: 100%;
+    text-align: center;
+}
+#container_spe_grad{
+   
+}
+#container_username {
+    padding-bottom: 8px;
+}
+#container_username button{
+    /* background: #4A7DB4; */
+    border-radius: 21px;
+    border: none;
+    padding: 10px 10px 10px 10px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+#container_username button:hover{
+    /* background-color: white;
+    color: #4A7DB4; */
+}
+.matiere{
+    margin-top: 1%;
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  th {
+    text-align: left;
+    padding: 8px;
+    background-color: #4A7DB4 !important;
+    color: white;
+    border: 3px solid  !important;
+  }
+  td{
+    text-align: left;
+    padding: 8px;
+    /* background-color: #4A7DB4 !important; */
+    
+    
+    border: 3px solid white !important;
+  }
+  td,p{
+    color: black !important;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  tr:hover {
+    background-color: #f5f5f5;
+  }
+@media only screen and (max-width : 950px) {
+    main{
+        display: block !important;
+        height: 629px;
+    }
+    #container_nom_prenom{
+        width: 100%;
+        height: 20%;
+        background-color: #7CA3CD;
+        border-radius: 50px;
+        display: flex;
+    }
+    .icon_profile{
+        height: 100%;
+        width: 50%;
+        margin-left: 10%;
+        filter: drop-shadow(0px 22px 5px rgba(0, 0, 0, 0.25));
+        border-radius: 50px;
+    }
+   
+    #animated-svg{
+        height: 90%;
+        margin-top: 4%;
+    }
+    .nom{
+        width: 50%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+    
+    #container_information{
+        width: 100%;
+    }
+    #deco_big{
+        top: 693px;
+    }
+}
