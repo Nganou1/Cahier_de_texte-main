@@ -1,19 +1,32 @@
+# Cahier de texte numérique pour enseignants · PHP / MySQL
 
-application de gestion de l'organisation scolaire d'une/ou plusieurs salles de classes.
-# Cahier de texte pour enseignants
+**Franck Nankeng** · Projet académique · [LinkedIn](https://www.linkedin.com/in/franck-nankeng-51b43b297/)
 
-Bienvenue dans le projet "Cahier de texte pour enseignants" ! Ce projet vise à faciliter la gestion des cours et des emplois du temps pour les enseignants en utilisant PHP. Il offre une plateforme conviviale où les enseignants peuvent ajouter leurs cours, consulter leur historique de cours et les administrateurs peuvent gérer les enseignants et visualiser les cours de tous les enseignants, triés par classe.
+Application web qui remplace le cahier de texte papier d'un établissement : chaque enseignant consigne ses séances,
+et l'administration suit les cours effectués dans chaque classe.
 
-![Image de la page d'accueil](./assets/page_accueil.png)
+![Page d'accueil](cahier_de_texte-main/assets/page_accueil.png)
 
-## Fonctionnalités principales
+## Fonctionnalités
+**Enseignants**
+- Saisir une séance : date, horaire, titre et contenu du cours.
+- Consulter l'historique de ses cours et le détail de chaque séance.
+- Gérer son profil.
 
-Le projet "Cahier de texte pour enseignants" offre les fonctionnalités suivantes :
+**Administrateurs**
+- Créer les comptes enseignants (nom, e-mail, téléphone).
+- Visualiser l'ensemble des cours effectués, triés par classe, pour suivre la progression des programmes.
 
-### Pour les enseignants
-- Ajouter des cours : Les enseignants peuvent ajouter des cours en spécifiant la date, l'heure, le titre et la description du cours.
-- Consulter les cours : Les enseignants peuvent consulter leur historique de cours et afficher les détails de chaque cours effectué.
+## Stack
+PHP (PDO), MySQL, HTML/CSS, Bootstrap 5, particles.js.
 
-### Pour les administrateurs
-- Ajouter un enseignant : Les administrateurs ont la possibilité d'ajouter de nouveaux enseignants en fournissant leurs informations personnelles, telles que le nom, l'adresse e-mail et le numéro de téléphone.
-- Visualiser les cours des enseignants : Les administrateurs peuvent visualiser tous les cours effectués par les enseignants, triés par classe. Cela permet une gestion efficace des cours et des emplois du temps.
+## Lancer le projet en local
+1. Copier le dossier `cahier_de_texte-main/` dans le répertoire web d'un serveur local (XAMPP, WAMP ou MAMP).
+2. Créer la base de données MySQL et adapter les identifiants dans `config/connexion.php`.
+3. Ouvrir `http://localhost/cahier_de_texte-main/`.
+
+> Les identifiants de `config/connexion.php` sont ceux d'un environnement local de développement :
+> à remplacer par des variables d'environnement avant tout déploiement.
+
+---
+*English — PHP/MySQL web app replacing a paper class logbook: teachers record each session; administrators create teacher accounts and review all sessions by class.*
